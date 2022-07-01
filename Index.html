@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.CSS">
+    <title>Netflix</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <img src="./IMG/net.png" width="90px" height="90px" alt="">
+            <!--<h2 class="logotipo">Netflix</h2>-->
+            
+            <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Series</a>
+            <a href="#">Películas</a>
+            <a href="#">Novedaddes</a>
+            <a href="#">Mi lista</a>
+            <a href="#">Audio y subtitulos</a>
+        </nav>
+
+        <nav>
+            <a href="#">Buscar</a>
+            <a href="#">Cuenta</a>
+            </nav>
+    </div>
+    </header>
+    <main>
+        <div class="pelicula-principal">
+        <div class="contenedor">
+            <H3 class="titulo">La memoria de un asesino (2022)</H3>
+            <p class="descripcion">
+                Alex, un asesino a sueldo, descubre que se ha convertido en un objetivo después de que se niega a completar un 
+                trabajo para una peligrosa organización criminal. 
+                Con el sindicato del crimen y el FBI persiguiéndolo,
+                Alex tiene las habilidades para mantenerse a la vanguardia, 
+                excepto por una cosa: está luchando con una pérdida de memoria severa que afecta todos sus movimientos. 
+                Alex debe cuestionar cada una de sus acciones y en quién puede confiar en última instancia.
+            </p>
+            <button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+			<button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+            </div>
+        </div>
+        
+
+        <div class="peliculas-recomendadas contenedor">
+            <div class="contenedor-titulo-controles">
+                <h3>Películas recomendadas</h3>
+                <div class="indicadores">
+
+                </div>
+            </div>
+            <div class="contenedor-principal">
+                <button role="button" id="flecha-izquierda" class="flecha izquierda"><i class="fa-solid fa-chevron-left"></i></button>
+                <button role="button" id="flecha-derecha" class="flecha derecha"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <!--<script src="js/main.js"></script>-->
+</body>
+</html>

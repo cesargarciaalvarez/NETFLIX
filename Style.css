@@ -1,0 +1,182 @@
+/*
+body {
+  heigh: 665px;
+  background-image: url("https://www.teknofilo.com/wp-content/uploads/2021/06/Netflix-1536x864.jpg");
+  background-size: 47rem;
+  background-attachment: fixed;
+
+}
+
+.Iniciar_Sesion {
+  background-color: red;
+  color: white;
+  font-size: 0.5rem;
+  border-radius: 2px;
+}
+
+.imagen{
+
+  <img src="">
+}
+.outer {
+  border: 5px dotted black;
+  border-radius: 5px;
+  width: 450px;
+  padding: 10px;
+  margin-bottom: 100px;
+  overflow: auto;
+}
+
+
+.inline-grid {
+  
+  background: green;
+  display: inline-grid;
+}*/
+
+:root {
+  --rojo: #e50914;
+  --Fondo: black;
+}
+
+/* inicializamos todos los valores que agrega por defecto para todos los navegadores*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*colocamos el fondo mandando a llamar la variable ademas 
+importamos el tipo de letra desde google fonts*/
+
+body {
+  background: var(--Fondo);
+  /*font-family: "Bebas Neue", cursive;*/
+  font-family: "Open Sans", sans-serif;
+}
+
+/*creamos un contenedor*/
+.contenedor {
+  width: 90%;
+  margin: auto;
+}
+
+/*accedemos al header para colocar un espacio o margen en la parte de arriba y abajo y de 0 px hacia los lados
+ya que la imagen de nexflix abarca toda el espacio de forma verticar*/
+header {
+  padding: 1.875rem 0;
+}
+
+/*accedemos al contenedor para personalizarlo ya que l logotipo va a la izquiera y el menu hacia la derecha*/
+
+header .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*colocamos el tipo de letra al logo de la parte izquierda*/
+header .logotipo {
+  font-family: "Bebas Neue", cursive;
+  font-weight: normal;
+  color: var(--rojo);
+  font-size: 2.5rem;
+  /*font-size: 40px;*/
+}
+
+/*colocamos un espacio a la derecha y ademas retiramos el 
+subrayado y colocamos las letras header en color blanco*/
+header nav a {
+  color: #aaa;
+  text-decoration: none;
+  margin-right: 1.25rem;
+}
+
+/*Colocamos un efecto de mas blanco cuando colocamos el cursor sobre los link*/
+/*accedemos al elemento a para colocar un efecto de que esta en inicio LO COMENTÈ*/
+header nav a:hover
+/*,
+header nav a.activo*/ {
+  color: white;
+}
+
+/* Pelicula Principal*/
+
+.pelicula-principal {
+  font-size: 16px;
+  min-height: 40.625rem;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+    url(./IMG/FONDO_PELICULA_PRINCIPAL2.jpg);
+  background-position: center center;
+  /*background-size: 80rem;*/
+  /*con este elemento extendi la imagen a lo largo y ademas 
+  con el margin bottom le di 50 px de espacio abajo*/
+  background-size: cover;
+  margin-bottom: 3.125rem;
+  display: flex;
+  align-items: end;
+}
+
+.pelicula-principal .contenedor {
+  margin: 0 auto;
+  margin-bottom: 6.25rem;
+}
+
+/*vamos a trabajar con el tiutlo y tomamos el tipo de letra de 600 que descargamos
+de google font*/
+.pelicula-principal .titulo {
+  font-weight: 600;
+  font-size: 3.125rem;
+  margin-bottom: 1.25rem;
+}
+
+.pelicula-principal .descripcion {
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  max-width: 50%;
+  margin-bottom: 1.25rem;
+}
+
+.pelicula-principal .boton {
+  background: rgba(92, 83, 83, 0.5);
+  border: none;
+  border-radius: 0.31rem;
+  padding: 0.93rem 1.875rem;
+  color: #fff;
+  margin-right: 1.25rem;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  font-size: 1.125rem;
+}
+
+.pelicula-principal .boton:hover {
+  background: white;
+  color: black;
+}
+
+/*separamos el icono del texto en los botones es por eso que accedemos al elemento i*/
+.pelicula-principal .boton i {
+  margin-right: 1.25rem;
+}
+
+@media screen and (max-width: 800px) {
+  header .logotipo {
+    margin-bottom: 0.625rem;
+    font-size: 1.875rem;
+  }
+
+  header .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pelicula-principal {
+    font-size: 0.875rem;
+  }
+
+  .pelicula-principal .descripcion {
+    max-width: 100%;
+  }
+}
